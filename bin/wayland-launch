@@ -2,7 +2,9 @@
 
 set -x
 
+echo Test 1
 mkdir -p "$XDG_RUNTIME_DIR" -m 700
+echo Test 2
 
 if [ -z "${WAYLAND_DISPLAY}" ]
 then WAYLAND_DISPLAY=wayland-0
