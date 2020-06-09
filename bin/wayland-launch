@@ -2,9 +2,14 @@
 
 set -x
 
-echo Test 1
+echo Debugging
+sleep 4 
+env $XDG_RUNTIME_DIR
+ls /run/user
+ls -ld /run/user/0
 mkdir -p "$XDG_RUNTIME_DIR" -m 700
-echo Test 2
+ls /run/user/0
+ls -ld /run/user/0/snap.navion
 
 if [ -z "${WAYLAND_DISPLAY}" ]
 then WAYLAND_DISPLAY=wayland-0
