@@ -2,14 +2,11 @@
 
 set -x
 
-sudo -i
 echo Debugging
 env $XDG_RUNTIME_DIR
-ls /run/user
 ls -ld /run/user/0
 find /run/user/0/
 mkdir -p "$XDG_RUNTIME_DIR" -m 700
-ls /run/user/0
 ls -ld /run/user/0/snap.navion
 env $XDG_RUNTIME_DIR
 
