@@ -4,7 +4,6 @@ set -x
 
 sudo -i
 echo Debugging
-sleep 4 
 env $XDG_RUNTIME_DIR
 ls /run/user
 ls -ld /run/user/0
